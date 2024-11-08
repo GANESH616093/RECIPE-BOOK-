@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recipe Book</title>
+</head>
+<body>
+    <header>
+        <h1>My Recipe Book</h1>
+        <nav>
+            <a href="#" onclick="showHome()">Home</a>
+            <a href="#" onclick="showRecipes()">Recipes</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div id="home">
+            <h2>Welcome to My Recipe Book</h2>
+            <p>Discover delicious recipes for every occasion!</p>
+            <p>Detailed Recipes</p>
+            <p>Quick and Eacy recipes</p>
+        </div>
+
+        <div id="recipe-list" style="display:none;">
+            <h1>Recipes</h1>
+            <ul class="recipe-grid">
+                <li onclick="showRecipe('recipe1')"><img src="https://img.taste.com.au/sE-X5HqY/taste/2024/03/5-ingredient-turbo-charged-spaghetti-recipe-196959-1.jpg" height="200" width="800">Spaghetti Carbonara</li>
+                <li onclick="showRecipe('recipe2')"><img src="https://kitchenofdebjani.com/wp-content/uploads/2023/04/easy-indian-chicken-curry-Recipe-for-beginners-Debjanir-rannaghar.jpg" height="150">Chicken Curry</li>
+                <li onclick="showRecipe('recipe3')"><img src="https://www.labonelfinebaking.shop/wp-content/uploads/2021/02/CLASSIC-CHOCOLATE-CAKE.jpg" height="150">Chocolate Cake</li>
+                <li onclick="showRecipe('recipe4')"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/fruit-custard-recipe.jpg" height="150">Fruit Custard</li>
+                <li onclick="showRecipe('recipe5')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNP181YtDov2aPMs2JWDg_b0XMDixzuSeYhw&s" height="150" width="200"><br>Falooda Dessert</br></li>
+                <li onclick="showRecipe('recipe6')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSaNoqJ-FsRZ35KdTV4EZIdWAgP8N5GZorsQ&s" height="150"><br>Gulab Jamun</br></li>
+                <li onclick="showRecipe('recipe7')"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2017/08/rice-kheer-instant-pot-featured-image.jpg" height="150" width="400">Kheer</li>
+                <li onclick="showRecipe('recipe8')"><img src="https://dataoils.com/wp-content/uploads/2022/12/recipes-img-6.jpg" height="200">Jalebi</li>
+                <li onclick="showRecipe('recipe9')"><img src="https://media.istockphoto.com/id/495184588/photo/indian-pulav-vegetable-rice-veg-biryani-basmati-rice.jpg?s=612x612&w=0&k=20&c=Qi-kkcqbihaWGdgKQGX184CxI_oeXlNvz8HIAmLFIVs=" height="500"><br>Veg Biriyani</br></li>
+                <li onclick="showRecipe('recipe10')"><img src="https://www.cookingcarnival.com/wp-content/uploads/2018/09/Mushroom-masala-4.jpg" height="100">Mushroom curry</li>
+                <li onclick="showRecipe('recipe11')"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/02/paneer-curry-recipe.jpg" height="150" width="">Paneer Curry</li>
+                <li onclick="showRecipe('recipe12')"><img src="https://lh3.googleusercontent.com/proxy/f1AVD_bMmd3qK65M6BCk5a-9OJkuJHu5wZjkPumm1Ef2GCRWsAOwEgL1aYaYOPqCVYImVU74ktUY_iDGnQn0QjRowRxvtbqxqqC1a26Vu3vu0d0XSrTehbRGiUQRUpymqGkGCZTIM5-xrA" height="150">Chole Bature</li>
+                <li onclick="showRecipe('recipe13')"><img src="https://static.toiimg.com/thumb/81907975.cms?imgsize=373318&width=800&height=800" height="150">Brinjal curry</li>
+                <li onclick="showRecipe('recipe14')"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/02/paneer-biryani-recipe.jpg" height="150">Paneer Biriyani</li>
+                <li onclick="showRecipe('recipe15')"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2019/09/mushroom_biryani.jpg" height="150">Mushroom Biriyani</li>
+                <li onclick="showRecipe('recipe16')"><img src="https://ministryofcurry.com/wp-content/uploads/2024/06/chicken-biryani-5.jpg" height="150">Chicken Biriyani</li>
+                <li onclick="showRecipe('recipe17')"><img src="https://pipingpotcurry.com/wp-content/uploads/2024/05/Lamb-Biryani.-Mutton-Biryani-Piping-Pot-Curry.jpg" height="150">Mutton Biriyani</li>
+                <li onclick="showRecipe('recipe18')"><img src="https://www.ruchifoodline.com/recipes//cdn/recipes/chicken-biryani.jpg" height="150">Mughalai chicken Biriyani</li>
+                <li onclick="showRecipe('recipe19')"><img src="https://c.ndtvimg.com/2023-01/oqp7e4cg_mutton-curry_625x300_21_January_23.jpg" height="150">Mutton Curry</li>
+                <li onclick="showRecipe('recipe20')"><img src="https://www.yummytummyaarthi.com/wp-content/uploads/2022/09/dalcha-recipe-1.jpeg" height="150">Mutton Dalcha</li>
+                <li onclick="showRecipe('recipe21')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1MbhpbFm6lvMsQMyjTxsR7pmYUgG9lG9XOA&s" height="150"><br>Egg Rice</br></li>
+                <li onclick="showRecipe('recipe22')"><img src="https://paattiskitchen.com/wp-content/uploads/2023/02/kmc_20230205_231723-2.jpg" height="150">Egg Curry</li>
+                <li onclick="showRecipe('recipe23')"><img src="https://i1.wp.com/www.bharatzkitchen.com/wp-content/uploads/2020/12/EGG-BHAJI-BIRYANI-.jpg?fit=1200%2C675&ssl=1" height="150"><br>Egg Biriyani</br></li>
+                <li onclick="showRecipe('recipe24')"><img src="https://www.lekhafoods.com/media/1050922/kolkata-rasagulla.jpg" height="150">Rasagulla</li>
+                <li onclick="showRecipe('recipe25')"><img src="https://nestle.fitterfly.in/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1l1IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5ea9855ea18e7956e4dc7cb9d4416437e2b496b3/20155-Kesari_Tofu_Angoori_Rasmalai.webp" height="150">Rasamalai</li>
+                <li onclick="showRecipe('recipe26')"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV6jFxTKJK26g97KQmpcfcfXEVx0AoD9-5gt7VQCytGbH-cwIb3EsvjU62iEuLhc9p53Ok4K5htKYuObS2GOBKfbXLWaItLXt2Tn0NhmNsIZ7Ym9c9kVERkwCdIR6SySXQuVVMF1xXlsc/s1600/20180831_171402_wm.jpg" height="150">Milk Kova</li>
+                <li onclick="showRecipe('recipe27')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMMQLX0rXYPNJc3NXIgDQ6p8GcXRi-SnIZiQ&s" height="150">Badam Milk</li>
+                <li onclick="showRecipe('recipe28')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2WykAyo-XM2T6eu3T8xM6yIlBygrzcfxAw&s" height="150"><br>Vanilla Cake</br></li>
+                <li onclick="showRecipe('recipe30')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9MYj_prlH_9iIUniO4pkOwdavlKJmZ4_1Zw&s" height="150"><br>Banana Milk Shake</br</li>
+                <li onclick="showRecipe('recipe31')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBXVrDqzp7-1EFXPrfbyo41X_ewFRiIKFvnA&s" height="150"><br>Chocolate Milk Shake</br></li>
+                <li onclick="showRecipe('recipe32')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uJWLVoxInhvUDyZbyBcAlp1WSOQ2ZUKohg&s" height="150"><br>Custard Apple shake</br></li>
+                <li onclick="showRecipe('recipe33')"><img src="https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg" height="150">Dosa</li>
+                <li onclick="showRecipe('recipe34')"><img src="https://cdn3.foodviva.com/static-content/food-images/roti-paratha-recipes/masala-puri-recipe/masala-puri-recipe.jpg" height="150">Puri</li>
+                <li onclick="showRecipe('recipe35')"><img src="https://vaya.in/recipes/wp-content/uploads/2018/02/Idli-and-Sambar-1.jpg" height="150">Idli</li>
+                <li onclick="showRecipe('recipe36')"><img src="https://media.istockphoto.com/id/1488738018/photo/medu-vada-or-medu-vada-with-sambhar-and-coconut-chutney-red-chutney-green-chutney-popular.jpg?s=612x612&w=0&k=20&c=dvWgKhQuw1lfOBxDpR6YFMLSZnWdyqYGV1pvcBt7mZw=" height="150">Vada</li>
+                <li onclick="showRecipe('recipe37')"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/lemon-rice-recipe.jpg" height="150">Lemon Rice</li>
+                <li onclick="showRecipe('recipe38')"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/sambar.jpg" height="150">Sambar</li>
+                <li onclick="showRecipe('recipe39')"><img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/09/Best-Peanut-Chutney-Recipe-Without-Coconut.jpg" height="150">Peanut Chutney</li>
+                <li onclick="showRecipe('recipe40')"><img src="https://www.theloveofspice.com/wp-content/uploads/2022/09/easy-coconut-chutney.jpg" height="150">Coconut Chutney</li>
+                <li onclick="showRecipe('recipe41')"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2020/12/potato-curry-instant-pot.webp" height="150">Potato Curry</li>
+                <li onclick="showRecipe('recipe42')"><img src="https://yennadosa.com/wp-content/uploads/2024/05/meduvada.png" height="150">Uddi Vada</li>
+                <li onclick="showRecipe('recipe43')"><img src="https://revi.b-cdn.net/wp-content/uploads/2017/01/punugulu-main.jpg" height="150" width="400" >Punugulu</li>
+                <li onclick="showRecipe('recipe44')"><img src="https://i.ytimg.com/vi/GtF3v85I4PE/maxresdefault.jpg"> Nellore Fish curry</li>
+                <li onclick="showRecipe('recipe45')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mpFVdGRxI9Y-w0sT2kgVejG_WGsMknD9zw&s">Fish Fry</li>
+                <li onclick="showRecipe('recipe46')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-epNMJaii3DJrIoN_IPiJKy25T7i7S50Vg&s">Prawns Curry</li>
+                <li onclick="showRecipe('recipe47')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSovcxhD54D5nQy_oPdPTv1_zwfjdqbVsDEWg&s">Chicken Fry</li>
+                <li onclick="showRecipe('recipe48')"><img src="https://img-global.cpcdn.com/recipes/e406fc2174c09341/680x482cq70/chicken-kabab-recipe-main-photo.jpg">Chicken Kabab</li>
+                <li onclick="showRecipe('recipe49')"><img src="https://i.ytimg.com/vi/482A1k-cWXo/mqdefault.jpg">Mutton Fry</li>
+                <li onclick="showRecipe('recipe50')"><img src="https://yummyindiankitchen.com/wp-content/uploads/2020/08/keema-kabab-mutton-kebab-480x270.jpg">Mutton Kabab</li>
+            </ul>
+        </div>
+
+        <div id="recipe-detail" style="display:none;">
+            <h2 id="recipe-title"></h2>
+            <p id="recipe-content"></p>
+            
+            <button onclick="showRecipes()">Back to Recipes</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Recipe Book</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
